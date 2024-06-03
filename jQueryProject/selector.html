@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>第二个例子</title>
+		<style type="text/css">
+			div{
+				background: gray;
+				width: 200px;
+				height: 100px;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-3.7.1.js"></script>
+		<script type="text/javascript">
+			function fun1(){
+				// jQuery选择器选择id
+				var obj = $("#one")
+				// 改变样式
+				obj.css("background","red")
+			}
+			
+			function fun2(){
+				// jQuery选择器选择class
+				var obj = $(".two")
+				obj.css("background","yellow")
+			}
+			
+			function fun3(){
+				// jQuery选择器选择 标签
+				var obj = $("div")
+				obj.css("background","orange")
+			}
+			
+			function fun4(){
+				var obj = $("*")
+				obj.css("background","blue")
+			}
+			
+			function fun5(){
+				var obj = $(".two,span")
+				obj.css("background","green")
+			}
+		</script>
+	</head>
+	<body>
+		<div id="one">我是one</div><br/>
+		<div class="two">我是two</div><br/>
+		<div>我没有id和class</div><br/>
+		<span>span</span><br/>
+		<input type="button" value="获取id = one 的元素" onclick="fun1()">
+		<input type="button" value="获取class = two 的元素" onclick="fun2()">
+		<input type="button" value="获取div的元素" onclick="fun3()">
+		<input type="button" value="所有选择器" onclick="fun4()">
+		<input type="button" value="组合选择器" onclick="fun5()">
+	</body>
+</html>

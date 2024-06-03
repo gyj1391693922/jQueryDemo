@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.7.1.js"></script>
+		<script type="text/javascript">
+			function fun1(){
+				var obj = $("input:first")
+				for(let i = 0;i < obj.length;i++){
+				alert(obj[i].value);
+				}
+			}
+			
+			function fun2(){
+				var obj = $("input:last")
+				for(let i = 0;i < obj.length;i++){
+				alert(obj[i].value);
+				}
+			}
+			
+			function fun3(){
+				var obj = $("input:eq(2)")
+				for(let i = 0;i < obj.length;i++){
+				alert(obj[i].value);
+				}
+			}
+			
+			function fun4(){
+				var obj = $("input:lt(2)")
+				for(let i = 0;i < obj.length;i++){
+				alert(obj[i].value);
+				}
+			}
+			
+			function fun5(){
+				var obj = $("input:gt(2)")
+				for(let i = 0;i < obj.length;i++){
+				alert(obj[i].value);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" value="1"><br/>
+		<input type="text" value="2"><br/>
+		<input type="text" value="3"><br/>
+		<input type="button" onclick="fun1()" value="first">
+		<input type="button" onclick="fun2()" value="last">
+		<input type="button" onclick="fun3()" value="eq">
+		<input type="button" onclick="fun4()" value="lt">
+		<input type="button" onclick="fun5()" value="gt">
+	</body>
+</html>

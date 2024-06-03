@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type='text/javascript'>
+			function getObj(id){
+				var obj = document.getElementById(id);
+				return obj
+			}
+			
+			function fun1(){
+				var obj = getObj("text1")
+				alert(obj.value);
+			}
+			
+			function fun2(){
+				var obj = getObj("text2")
+				alert(obj.value);
+			}
+		</script>
+	</head>
+	<body>
+		<input type='text' id='text1' value='我是text1'/> <br/>
+		<input type='text' id='text2' value='我是text2'/> <br/>
+		<input type='button' value='我是单机按钮 1' onclick="fun1()"/> <br/>
+		<input type='button' value='我是单机按钮 2' onclick="fun2()"/> <br/>
+	</body>
+</html>

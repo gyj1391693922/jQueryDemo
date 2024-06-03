@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.7.1.js"></script>
+		<script type="text/javascript">
+			function fun1(){
+				var obj = $(":text")
+				alert(obj.val());
+			}
+			
+			function fun2(){
+				var obj = $(":radio")
+				for(let i = 0; i < obj.length;i ++){
+					alert(obj[i].value)
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" value="type=text"></br>
+		<input type="radio" value="man">
+		<input type="radio" value="woman"></br>
+		<input type="button" onclick="fun1()" value="查看text">
+		<input type="button" onclick="fun2()" value="查看radio">
+	</body>
+</html>
