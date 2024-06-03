@@ -4,3 +4,5 @@
 - selector.html：选择器案例  
 - formOptions.html：表单选择器案例  
 - flitters.html：过滤器案例
+- formFiltter.html：表单过滤器
+- eventDemo.html：事件
