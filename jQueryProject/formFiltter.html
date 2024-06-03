@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.7.1.js"></script>
+		<script type="text/javascript">
+			function fun1(){
+				var obj = $(":text:enabled")
+				alert(obj.val())
+			}
+			
+			function fun2(){
+				var obj = $(":checkbox:checked")
+				alert(obj.val())
+			}
+			
+			function fun3(){
+				var obj = $("select>option:selected")
+				alert(obj.val())
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" value="text enabled">
+		<input type="text" value="text disabled" disabled><br/>
+		<input type="checkbox" value="not check">
+		<input type="checkbox" value="box is checked" checked>
+		<input type="checkbox" value="box is checked" checked><br/>
+		<select>
+			<option value="not selected">没选中</option>
+			<option value="is selected" selected>选中</option>
+		</select><br/><br/>
+		<input type="button" value="form表单过滤-text" onclick="fun1()">
+		<input type="button" value="form表单过滤-checkbox" onclick="fun2()">
+		<input type="button" value="form表单过滤-select" onclick="fun3()">
+	</body>
+</html>

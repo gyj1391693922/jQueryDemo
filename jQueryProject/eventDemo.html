@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.7.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				// 因为input是组件，需要等待dom完全创建后才能点击，所以需要用到jQuery特性
+				$("#btn").click(function(){
+					alert("1");
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<input type="button" id="btn" value="按下事件">
+	</body>
+</html>
